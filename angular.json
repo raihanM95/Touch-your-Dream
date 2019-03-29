@@ -19,13 +19,21 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
+              "src/tyd.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/animate.css/animate.min.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/js/bootstrap.js",
+              "node_modules/js/jquery-2.2.3.min.js",
+              "node_modules/js/modernizr.js",
+              "node_modules/js/custom-select.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
@@ -84,7 +92,7 @@
             ],
             "scripts": [],
             "assets": [
-              "src/favicon.ico",
+              "src/tyd.ico",
               "src/assets"
             ]
           }

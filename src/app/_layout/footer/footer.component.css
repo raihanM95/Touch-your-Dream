@@ -1,0 +1,71 @@
+/* footer */
+.mrgin{
+    margin-top: 400px;
+}
+
+.social-icons h2 {
+    font-size: 1.1em;
+    text-transform: capitalize;
+    color: #777;
+}
+
+ul.social-iconsv2 li {
+    display: inline-block;
+    margin-right: 6px;
+    border-radius: 50%;
+}
+
+ul.social-iconsv2 li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+}
+
+ul.social-iconsv2 li a i.fab {
+    font-size: 14px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: transparent;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+}
+
+ul.social-iconsv2 li:first-child {
+    background: #3b5998;
+    color: #fff;
+}
+
+ul.social-iconsv2 li:last-child,ul.social-iconsv2 li:nth-child(2) {
+    background: #1da1f2;
+    color: #000;
+}
+
+ul.social-iconsv2 li:nth-child(3) {
+    background: #dd4b39;
+    color: #000;
+}
+
+ul.social-iconsv2 li a i.fab:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+ul.social-iconsv2 li a:hover {
+    color: #fff;
+}
+
+footer {
+    padding: 2em 0;
+    background: #000;
+}
+
+.cpy-right p a {
+    color: #ff1949;
+}
+/* //footer */

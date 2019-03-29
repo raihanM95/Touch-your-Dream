@@ -1,0 +1,81 @@
+/* section title */
+h3.main-title-agile {
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 2.1em;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.title-section {
+    position: relative;
+}
+
+.title-line {
+    margin-top: 11px;
+    background-color: #E3E3E3;
+    border-color: #ff1949;
+    border-style: solid;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    border-width: 0px 0px 0px 100px;
+}
+/* //section title */
+
+/*--contact--*/
+.contact-bottom {
+    padding: 3rem;
+}
+
+.map iframe {
+    width: 100%;
+    min-height: 350px;
+    border: 5px solid #777;
+}
+
+.address h5 {
+    color: #000;
+    text-transform: capitalize;
+    font-size: 1.1em;
+}
+
+.contact-title {
+    text-transform: capitalize;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #131313;
+    margin-bottom: 0.5em;
+}
+
+.address p a:hover {
+    color: #000;
+}
+
+form.contact-wthree label {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    background: #ff1949;
+    line-height: 45px;
+    color: #eee;
+    margin-bottom: 0;
+}
+
+.contact-top1 button {
+    background: #ff1949;
+    letter-spacing: 1px;
+}
+
+form.contact-wthree .form-control {
+    border-radius: 0;
+    
+    background: #eee;
+    border: none;
+    font-size: 0.9rem;
+}
+
+.inpt-size{
+    height: 45px;
+}
+/*-- //contact--*/

@@ -1,0 +1,31 @@
+<body>
+  <h1></h1>
+  <div class=" w3l-login-form">
+      <h2>Login Here</h2>
+      <form #form='ngForm' autocomplete="off" (submit)="onSubmit(form)">
+          <div class=" w3l-form-group">
+              <label>Username:</label>
+              <div class="group">
+                  <i class="fas fa-user"></i>
+                  <input type="text" class="form-control" #UserName="ngModel" name="UserName" [(ngModel)]="formModel.UserName" placeholder="Username" required="required" />
+              </div>
+          </div>
+          <div class=" w3l-form-group">
+              <label>Password:</label>
+              <div class="group">
+                  <i class="fas fa-unlock"></i>
+                  <input type="password" class="form-control" #Password="ngModel" name="Password" [(ngModel)]="formModel.Password" placeholder="Password" required="required" />
+              </div>
+          </div>
+          <div class="forgot">
+              
+              <p><input type="checkbox">Remember Me</p>
+          </div>
+          <button type="submit" [disabled]="form.invalid">Login</button>
+      </form>
+      
+  </div>
+  <footer>
+      <p class="copyright-agileinfo"> &copy; 2019 Touch your Dream. All Rights Reserved</p>
+  </footer>
+</body>

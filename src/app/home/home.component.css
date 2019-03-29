@@ -1,0 +1,153 @@
+/* banner */
+/* Carousel */
+.carousel-indicators li {
+    cursor: pointer;
+}
+
+.bg-theme {
+    background: #ff1949 !important;
+}
+
+.carousel-indicators {
+    position: absolute;
+    left: 50%;
+}
+
+.bg1 {
+    background: url(./images/bg1.png) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+.bg2 {
+    background: url(./images/bg2.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+.bg3 {
+    background: url(./images/bg3.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+.bg4 {
+    background: url(./images/bg4.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+.bg5 {
+    background: url(./images/bg5.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+.bnr-text-wthree {
+    padding: 17vw 0 17vw 30vw;
+}
+
+h3.b-w3ltxt {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 2.5em;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bnr-text-wthree p {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: 'Gentium Basic', serif;
+    font-style: italic;
+}
+
+.btn-agile {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #fff;
+    background: #ff1949;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 12px 0;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+.btn-agile:after {
+    position: absolute;
+    -webkit-transition: .3s;
+    transition: .3s;
+    content: '';
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background: #ff1948;
+}
+
+.btn-agile:hover:after {
+    width: 100%;
+    left: 0;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    background: #fff;
+}
+
+.btn-agile:hover {
+    color: #fff;
+    background: #ff1949;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+.list-group-item{
+    background-color: #eee;
+    color: #131313;
+}
+
+body{
+    color: #fff;
+}
+/* //banner */
+/* //Carousel */
+
+
+.register-form,
+.banner-agile {
+    background: #131313;
+}
+/* //banner login */
