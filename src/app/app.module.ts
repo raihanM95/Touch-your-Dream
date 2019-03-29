@@ -14,6 +14,7 @@ import { AppHeaderComponent } from './_layout/app-header/app-header.component';
 import { FooterComponent } from './_layout/footer/footer.component';
 import { AppLayoutComponent } from './_layout/app-layout/app-layout.component';
 import { AdminHeaderComponent } from './_layout/admin-header/admin-header.component';
+import { AdminLayoutComponent } from './_layout/admin-layout/admin-layout.component';
 import { AdvisorHeaderComponent } from './_layout/advisor-header/advisor-header.component';
 import { StudentHeaderComponent } from './_layout/student-header/student-header.component';
 
@@ -49,6 +50,7 @@ import { SprofileComponent } from './student/sprofile/sprofile.component';
     FooterComponent,
     AppLayoutComponent,
     AdminHeaderComponent,
+    AdminLayoutComponent,
     StudentHeaderComponent,
     AdvisorHeaderComponent,
 

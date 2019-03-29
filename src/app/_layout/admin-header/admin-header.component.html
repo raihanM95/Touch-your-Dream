@@ -1,4 +1,37 @@
 <nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand text-white">Touch your Dream</a>
-  <button class="btn btn-danger my-2 my-sm-0" *ngIf="adminDetails" (click)="onLogout()">({{adminDetails.userName}}) Logout <span class="fas fa-sign-out-alt flash animated infinite"></span></button>
+    <a class="navbar-brand text-white"></a>
+    <button class="btn btn-danger my-2 my-sm-0" *ngIf="adminDetails" (click)="onLogout()">({{adminDetails.userName}}) Logout <span class="fas fa-sign-out-alt flash animated infinite"></span></button>
 </nav>
+<div class="nav-side-menu">
+    <div class="brand">Touch your Dream</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+    <div class="menu-list">
+        <ul id="menu-content" class="menu-content collapse out">
+            <li>
+                <a routerLink="/ahome"><i class="fas fa-tachometer-alt"></i> Dashboard </a>
+            </li>
+            <li data-toggle="collapse" data-target="#products" class="collapsed active">
+                <a ><i class="fas fa-users fa-lg"></i> User <span class="arrow fas fa-chevron-down"></span></a>
+            </li>
+            <ul class="sub-menu collapse" id="products">
+                <li class="active"><a routerLink="/advisor-list"><i class="fas fa-chalkboard-teacher fa-lg"></i> Advisor list </a></li>
+                <li><a routerLink="/student-list"><i class="fas fa-user-graduate fa-lg"></i> Student list </a></li>
+            </ul>
+            <li>
+                <a routerLink="/entrysubinfo"><i class="fas fa-graduation-cap fa-lg"></i> Subject info </a>
+            </li>
+            <li>
+                <a routerLink="/entryreqcgpa"><i class="fas fa-poll fa-lg"></i> CGPA info </a>
+            </li>
+            <li>
+                <a routerLink="/entryreqskill"><i class="fas fa-user-cog fa-lg"></i> Skill info </a>
+            </li>
+            <li>
+                <a routerLink="/rpaper-list"><i class="fas fa-paperclip fa-lg"></i> Research paper </a>
+            </li>
+            <li>
+                <a routerLink="/entrysoinfo"><i class="fas fa-user-graduate fa-lg"></i> Scholarship info </a>
+            </li>
+        </ul>
+    </div>
+</div>

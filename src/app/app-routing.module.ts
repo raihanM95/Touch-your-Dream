@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AuthGuard } from './auth/auth.guard';
 
 import { AppLayoutComponent } from './_layout/app-layout/app-layout.component';
-import { AdminHeaderComponent } from './_layout/admin-header/admin-header.component';
+import { AdminLayoutComponent } from './_layout/admin-layout/admin-layout.component';
 import { AdvisorHeaderComponent } from './_layout/advisor-header/advisor-header.component';
 import { StudentHeaderComponent } from './_layout/student-header/student-header.component';
 
@@ -53,7 +53,7 @@ const routes: Routes = [
   // admin site with layout routes
   { 
     path: '', 
-    component: AdminHeaderComponent,
+    component: AdminLayoutComponent,
     children: [
       { path: 'ahome', component: AhomeComponent, pathMatch: 'full', canActivate:[AuthGuard]},
       { path: 'advisor-list', component: AdvisorListComponent, pathMatch: 'full', canActivate:[AuthGuard]},
