@@ -28,7 +28,9 @@ import { AdminService } from './shared/admin.service';
 import { AloginComponent } from './admin/alogin/alogin.component';
 import { AhomeComponent } from './admin/ahome/ahome.component';
 import { AdvisorListComponent } from './admin/advisor-list/advisor-list.component';
+import { AdvisorDetailsComponent } from './admin/advisor-list/advisor-details/advisor-details.component';
 import { StudentListComponent } from './admin/student-list/student-list.component';
+import { StudentDetailsComponent } from './admin/student-list/student-details/student-details.component';
 import { RpaperListComponent } from './admin/rpaper-list/rpaper-list.component';
 import { EntrysubinfoComponent } from './admin/entrysubinfo/entrysubinfo.component';
 import { EntryreqcgpaComponent } from './admin/entryreqcgpa/entryreqcgpa.component';
@@ -62,7 +64,9 @@ import { SprofileComponent } from './student/sprofile/sprofile.component';
     AloginComponent,
     AhomeComponent,
     AdvisorListComponent,
+    AdvisorDetailsComponent,
     StudentListComponent,
+    StudentDetailsComponent,
     RpaperListComponent,
     EntrysubinfoComponent,
     EntryreqcgpaComponent,

@@ -1,3 +1,25 @@
-<p>
-  advisor-list works!
-</p>
+<table class="table table-hover">
+    <thead>
+        <tr>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col">Varsity</th>
+        <th scope="col">Dept</th>
+        <th scope="col">Picture</th>
+        <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let adv of service.list">
+        <th scope="row"></th>
+        <td>{{ adv.FullName }}</td>
+        <td>{{ adv.VarsityName }}</td>
+        <td>{{ adv.DeptName }}</td>
+        <td><img [src]="" alt="Image Not Available" width="100" height="100" class="img-circle"></td>
+        <td>
+            <i class="fas fa-eye fa-lg text-info fa-hover" (click)="onDetails(adv.Id)" style="margin-right: 20px"></i>
+            <i class="fas fa-trash-alt fa-lg text-danger" (click)="onDelete(adv.Id)"></i>
+        </td>
+        </tr>
+    </tbody>
+</table>
