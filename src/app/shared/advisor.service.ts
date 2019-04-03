@@ -9,7 +9,7 @@ import { Advisor } from './advisor.model';
 })
 export class AdvisorService {
   formData: Advisor;
-  list : Advisor[];
+  advList : Advisor[];
   
   constructor(private fb: FormBuilder, private http: HttpClient) { }
   readonly BaseURI = 'http://localhost:1068/api';
@@ -17,13 +17,13 @@ export class AdvisorService {
   getAdvisorList() {
     return this.http.get(this.BaseURI + '/Advisor/advisorList')
     .toPromise()
-    .then(res => this.list = res as Advisor[]);
+    .then(res => this.advList = res as Advisor[]);
   }
 
   getAdvisorDetails(id){
     return this.http.get(this.BaseURI + '/Advisor/advisorDetails/' + id)
     .toPromise()
-    .then(res => this.list = res as Advisor[]);
+    .then(res => this.advList = res as Advisor[]);
   }
 
   removeAdvisor(id){
