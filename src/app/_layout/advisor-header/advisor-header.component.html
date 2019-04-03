@@ -1,3 +1,4 @@
-<p>
-  advisor-header works!
-</p>
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand text-white"></a>
+  <button class="btn btn-danger my-2 my-sm-0" *ngIf="advisorLog" (click)="onLogout()">({{advisorLog.UserName}}) Logout <span class="fas fa-sign-out-alt flash animated infinite"></span></button>
+</nav>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { StudentService } from './../../shared/student.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-student-header',
@@ -6,10 +8,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./student-header.component.css']
 })
 export class StudentHeaderComponent implements OnInit {
+  studentLog;
 
-  constructor() { }
+  constructor(private router: Router, private service: StudentService) { }
 
   ngOnInit() {
+    this.service.getStudentLog().subscribe(
+      res => {
+        this.studentLog = res;
+      },
+      err => {
+        console.log(err);
+      },
+    );
   }
 
+  onLogout() {
+    localStorage.removeItem('token');
+    this.router.navigate(['/student/slogin']);
+  }
 }

@@ -14,6 +14,14 @@ export class AdvisorService {
   constructor(private fb: FormBuilder, private http: HttpClient) { }
   readonly BaseURI = 'http://localhost:1068/api';
   
+  Login(formData) {
+    return this.http.post(this.BaseURI + '/Advisor/Login', formData);
+  }
+
+  getAdvisorLog() {
+    return this.http.get(this.BaseURI + '/Advisor/Log');
+  }
+
   getAdvisorList() {
     return this.http.get(this.BaseURI + '/Advisor/advisorList')
     .toPromise()

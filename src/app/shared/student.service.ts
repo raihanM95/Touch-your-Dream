@@ -13,6 +13,14 @@ export class StudentService {
   constructor(private fb: FormBuilder, private http: HttpClient) { }
   readonly BaseURI = 'http://localhost:1068/api';
   
+  Login(formData) {
+    return this.http.post(this.BaseURI + '/Student/Login', formData);
+  }
+
+  getStudentLog() {
+    return this.http.get(this.BaseURI + '/Student/Log');
+  }
+
   getStudentList() {
     return this.http.get(this.BaseURI + '/Student/studentList')
     .toPromise()
