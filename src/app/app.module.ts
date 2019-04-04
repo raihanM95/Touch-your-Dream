@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
 import { AuthInterceptor } from './auth/auth.interceptor';
+import { AgmCoreModule } from '@agm/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -112,6 +113,9 @@ import { ScholarshipInfoComponent } from './student/scholarship-info/scholarship
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDnVgWsG4MzVBACiUYvRZaT2hNmpxbwHHo'
+    }),
     ToastrModule.forRoot({
       progressBar: true
     }),
