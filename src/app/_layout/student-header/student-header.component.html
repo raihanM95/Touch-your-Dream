@@ -2,3 +2,29 @@
   <a class="navbar-brand text-white"></a>
   <button class="btn btn-danger my-2 my-sm-0" *ngIf="studentLog" (click)="onLogout()">({{studentLog.UserName}}) Logout <span class="fas fa-sign-out-alt flash animated infinite"></span></button>
 </nav>
+<div class="nav-side-menu">
+  <div class="brand">Touch your Dream</div>
+  <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+  <div class="menu-list">
+      <ul id="menu-content" class="menu-content collapse out">
+          <li class="active">
+              <a routerLink="/sprofile"><i class="fas fa-user-circle"></i> Profile </a>
+          </li>
+          <li>
+              <a routerLink="/show-cgpa"><i class="fas fa-poll fa-lg"></i> CGPA </a>
+          </li>
+          <li>
+              <a routerLink="/show-skill"><i class="fas fa-user-cog fa-lg"></i> Skill </a>
+          </li>
+          <li>
+              <a routerLink="/paper-list"><i class="fas fa-clipboard-list fa-lg"></i> Research paper </a>
+          </li>
+          <li>
+              <a routerLink="/cv-generate"><i class="fas fa-file fa-lg"></i> CV </a>
+          </li>
+          <li>
+              <a routerLink="/scholarship-info"><i class="fas fa-user-graduate fa-lg"></i> Scholarship info </a>
+          </li>
+      </ul>
+  </div>
+</div>

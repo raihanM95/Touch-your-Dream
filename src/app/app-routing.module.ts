@@ -4,8 +4,8 @@ import { AuthGuard } from './auth/auth.guard';
 
 import { AppLayoutComponent } from './_layout/app-layout/app-layout.component';
 import { AdminLayoutComponent } from './_layout/admin-layout/admin-layout.component';
-import { AdvisorHeaderComponent } from './_layout/advisor-header/advisor-header.component';
-import { StudentHeaderComponent } from './_layout/student-header/student-header.component';
+import { AdvisorLayoutComponent } from './_layout/advisor-layout/advisor-layout.component';
+import { StudentLayoutComponent } from './_layout/student-layout/student-layout.component';
 
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
@@ -25,10 +25,18 @@ import { EntrysoinfoComponent } from './admin/entrysoinfo/entrysoinfo.component'
 import { TregisterComponent } from './advisor/tregister/tregister.component';
 import { TloginComponent } from './advisor/tlogin/tlogin.component';
 import { TprofileComponent } from './advisor/tprofile/tprofile.component';
+import { PublishRpaperComponent } from './advisor/publish-rpaper/publish-rpaper.component';
+import { ShowRpaperComponent } from './advisor/show-rpaper/show-rpaper.component';
+import { TrackStudentComponent } from './advisor/track-student/track-student.component';
 
 import { SregisterComponent } from './student/sregister/sregister.component';
 import { SloginComponent } from './student/slogin/slogin.component';
 import { SprofileComponent } from './student/sprofile/sprofile.component';
+import { ShowCgpaComponent } from './student/show-cgpa/show-cgpa.component';
+import { ShowSkillComponent } from './student/show-skill/show-skill.component';
+import { PaperListComponent } from './student/paper-list/paper-list.component';
+import { CvGenerateComponent } from './student/cv-generate/cv-generate.component';
+import { ScholarshipInfoComponent } from './student/scholarship-info/scholarship-info.component';
 
 const routes: Routes = [
   // site with layout routes
@@ -69,20 +77,26 @@ const routes: Routes = [
   // advisor site with layout routes
   { 
     path: '', 
-    component: AdvisorHeaderComponent,
+    component: AdvisorLayoutComponent,
     children: [
       { path: 'tprofile', component: TprofileComponent, pathMatch: 'full', canActivate:[AuthGuard]},
-      
+      { path: 'publish-rpaper', component: PublishRpaperComponent, pathMatch: 'full', canActivate:[AuthGuard]},
+      { path: 'show-rpaper', component: ShowRpaperComponent, pathMatch: 'full', canActivate:[AuthGuard]},
+      { path: 'track-student', component: TrackStudentComponent, pathMatch: 'full', canActivate:[AuthGuard]},
     ]
   },
 
   // student site with layout routes
   { 
     path: '', 
-    component: StudentHeaderComponent,
+    component: StudentLayoutComponent,
     children: [
       { path: 'sprofile', component: SprofileComponent, pathMatch: 'full', canActivate:[AuthGuard]},
-      
+      { path: 'show-cgpa', component: ShowCgpaComponent, pathMatch: 'full', canActivate:[AuthGuard]},
+      { path: 'show-skill', component: ShowSkillComponent, pathMatch: 'full', canActivate:[AuthGuard]},
+      { path: 'paper-list', component: PaperListComponent, pathMatch: 'full', canActivate:[AuthGuard]},
+      { path: 'cv-generate', component: CvGenerateComponent, pathMatch: 'full', canActivate:[AuthGuard]},
+      { path: 'scholarship-info', component: ScholarshipInfoComponent, pathMatch: 'full', canActivate:[AuthGuard]},
     ]
   },
 

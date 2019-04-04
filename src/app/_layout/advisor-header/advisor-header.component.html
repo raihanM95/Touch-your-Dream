@@ -2,3 +2,24 @@
   <a class="navbar-brand text-white"></a>
   <button class="btn btn-danger my-2 my-sm-0" *ngIf="advisorLog" (click)="onLogout()">({{advisorLog.UserName}}) Logout <span class="fas fa-sign-out-alt flash animated infinite"></span></button>
 </nav>
+<div class="nav-side-menu">
+  <div class="brand">Touch your Dream</div>
+  <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+  <div class="menu-list">
+    <ul id="menu-content" class="menu-content collapse out">
+      <li class="active">
+          <a routerLink="/tprofile"><i class="fas fa-user-circle"></i> Profile </a>
+      </li>
+      <li>
+          <a routerLink="/track-student"><i class="fas fa-street-view fa-lg"></i> Student </a>
+      </li>
+      <li data-toggle="collapse" data-target="#products" class="collapsed">
+          <a ><i class="fas fa-paperclip fa-lg"></i> Research <span class="arrow fas fa-chevron-down"></span></a>
+      </li>
+      <ul class="sub-menu collapse" id="products">
+          <li><a routerLink="/publish-rpaper"><i class="fas fa-upload fa-lg"></i> Publish </a></li>
+          <li><a routerLink="/show-rpaper"><i class="fas fa-list-alt fa-lg"></i> Paper </a></li>
+      </ul>
+    </ul>
+  </div>
+</div>

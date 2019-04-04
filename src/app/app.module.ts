@@ -16,7 +16,9 @@ import { AppLayoutComponent } from './_layout/app-layout/app-layout.component';
 import { AdminHeaderComponent } from './_layout/admin-header/admin-header.component';
 import { AdminLayoutComponent } from './_layout/admin-layout/admin-layout.component';
 import { AdvisorHeaderComponent } from './_layout/advisor-header/advisor-header.component';
+import { AdvisorLayoutComponent } from './_layout/advisor-layout/advisor-layout.component';
 import { StudentHeaderComponent } from './_layout/student-header/student-header.component';
+import { StudentLayoutComponent } from './_layout/student-layout/student-layout.component';
 
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
@@ -24,6 +26,8 @@ import { ContactComponent } from './contact/contact.component';
 import { SubjectComponent } from './subject/subject.component';
 
 import { AdminService } from './shared/admin.service';
+import { AdvisorService } from './shared/advisor.service';
+import { StudentService } from './shared/student.service';
 
 import { AloginComponent } from './admin/alogin/alogin.component';
 import { AhomeComponent } from './admin/ahome/ahome.component';
@@ -40,10 +44,18 @@ import { EntrysoinfoComponent } from './admin/entrysoinfo/entrysoinfo.component'
 import { TregisterComponent } from './advisor/tregister/tregister.component';
 import { TloginComponent } from './advisor/tlogin/tlogin.component';
 import { TprofileComponent } from './advisor/tprofile/tprofile.component';
+import { PublishRpaperComponent } from './advisor/publish-rpaper/publish-rpaper.component';
+import { ShowRpaperComponent } from './advisor/show-rpaper/show-rpaper.component';
+import { TrackStudentComponent } from './advisor/track-student/track-student.component';
 
 import { SregisterComponent } from './student/sregister/sregister.component';
 import { SloginComponent } from './student/slogin/slogin.component';
 import { SprofileComponent } from './student/sprofile/sprofile.component';
+import { ShowCgpaComponent } from './student/show-cgpa/show-cgpa.component';
+import { ShowSkillComponent } from './student/show-skill/show-skill.component';
+import { PaperListComponent } from './student/paper-list/paper-list.component';
+import { CvGenerateComponent } from './student/cv-generate/cv-generate.component';
+import { ScholarshipInfoComponent } from './student/scholarship-info/scholarship-info.component';
 
 @NgModule({
   declarations: [
@@ -53,9 +65,11 @@ import { SprofileComponent } from './student/sprofile/sprofile.component';
     AppLayoutComponent,
     AdminHeaderComponent,
     AdminLayoutComponent,
-    StudentHeaderComponent,
     AdvisorHeaderComponent,
-
+    AdvisorLayoutComponent,
+    StudentHeaderComponent,
+    StudentLayoutComponent,
+    
     HomeComponent,
     AboutComponent,
     ContactComponent,
@@ -76,10 +90,18 @@ import { SprofileComponent } from './student/sprofile/sprofile.component';
     TregisterComponent,
     TloginComponent,
     TprofileComponent,
+    PublishRpaperComponent,
+    ShowRpaperComponent,
+    TrackStudentComponent,
 
     SregisterComponent,
     SloginComponent,
     SprofileComponent,
+    ShowCgpaComponent,
+    ShowSkillComponent,
+    PaperListComponent,
+    CvGenerateComponent,
+    ScholarshipInfoComponent,
     
   ],
   imports: [
@@ -94,7 +116,7 @@ import { SprofileComponent } from './student/sprofile/sprofile.component';
       progressBar: true
     }),
   ],
-  providers: [AdminService, {
+  providers: [AdminService, AdvisorService, StudentService, {
     provide: HTTP_INTERCEPTORS,
     useClass: AuthInterceptor,
     multi: true
