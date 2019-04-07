@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Chart} from 'chart.js';
+import { Chart } from 'chart.js';
 
 @Component({
   selector: 'app-subject',
@@ -19,8 +19,8 @@ export class SubjectComponent implements OnInit {
       data: {
         labels: ["CSE", "SWE", "MCT", "EEE", "ETE"],
         datasets: [{
-          label: '',
-          data: [10, 10, 3, 5, 2, ],
+          label: 'Department',
+          data: [10, 10, 3, 5, 2],
           backgroundColor: [
             'rgba(255, 99, 132, 0.2)',
             'rgba(54, 162, 235, 0.2)',
