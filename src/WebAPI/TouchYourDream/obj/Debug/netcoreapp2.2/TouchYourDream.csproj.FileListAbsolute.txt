@@ -1,0 +1,14 @@
+E:\Important File\Programs\C#\SWE-332_(Software Engineering Project-II (Web Programming))\TouchYourDream\TouchYourDream\bin\Debug\netcoreapp2.2\TouchYourDream.deps.json
+E:\Important File\Programs\C#\SWE-332_(Software Engineering Project-II (Web Programming))\TouchYourDream\TouchYourDream\bin\Debug\netcoreapp2.2\TouchYourDream.runtimeconfig.json
+E:\Important File\Programs\C#\SWE-332_(Software Engineering Project-II (Web Programming))\TouchYourDream\TouchYourDream\bin\Debug\netcoreapp2.2\TouchYourDream.runtimeconfig.dev.json
+E:\Important File\Programs\C#\SWE-332_(Software Engineering Project-II (Web Programming))\TouchYourDream\TouchYourDream\bin\Debug\netcoreapp2.2\TouchYourDream.dll
+E:\Important File\Programs\C#\SWE-332_(Software Engineering Project-II (Web Programming))\TouchYourDream\TouchYourDream\obj\Debug\netcoreapp2.2\TouchYourDream.csproj.CoreCompileInputs.cache
+E:\Important File\Programs\C#\SWE-332_(Software Engineering Project-II (Web Programming))\TouchYourDream\TouchYourDream\obj\Debug\netcoreapp2.2\TouchYourDream.RazorAssemblyInfo.cache
+E:\Important File\Programs\C#\SWE-332_(Software Engineering Project-II (Web Programming))\TouchYourDream\TouchYourDream\obj\Debug\netcoreapp2.2\TouchYourDream.RazorAssemblyInfo.cs
+E:\Important File\Programs\C#\SWE-332_(Software Engineering Project-II (Web Programming))\TouchYourDream\TouchYourDream\obj\Debug\netcoreapp2.2\TouchYourDream.AssemblyInfoInputs.cache
+E:\Important File\Programs\C#\SWE-332_(Software Engineering Project-II (Web Programming))\TouchYourDream\TouchYourDream\obj\Debug\netcoreapp2.2\TouchYourDream.AssemblyInfo.cs
+E:\Important File\Programs\C#\SWE-332_(Software Engineering Project-II (Web Programming))\TouchYourDream\TouchYourDream\obj\Debug\netcoreapp2.2\TouchYourDream.RazorTargetAssemblyInfo.cache
+E:\Important File\Programs\C#\SWE-332_(Software Engineering Project-II (Web Programming))\TouchYourDream\TouchYourDream\bin\Debug\netcoreapp2.2\TouchYourDream.pdb
+E:\Important File\Programs\C#\SWE-332_(Software Engineering Project-II (Web Programming))\TouchYourDream\TouchYourDream\obj\Debug\netcoreapp2.2\TouchYourDream.dll
+E:\Important File\Programs\C#\SWE-332_(Software Engineering Project-II (Web Programming))\TouchYourDream\TouchYourDream\obj\Debug\netcoreapp2.2\TouchYourDream.pdb
+E:\Important File\Programs\C#\SWE-332_(Software Engineering Project-II (Web Programming))\TouchYourDream\TouchYourDream\obj\Debug\netcoreapp2.2\TouchYourDream.csprojAssemblyReference.cache
